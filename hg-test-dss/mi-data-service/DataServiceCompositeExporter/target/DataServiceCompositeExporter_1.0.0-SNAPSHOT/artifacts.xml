@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="DataServiceCompositeExporter" version="1.0.0-SNAPSHOT" type="carbon/application">
+        <dependency artifact="RDBMSDataService" version="1.0.0" include="true" serverRole="DataServicesServer"/>
+    </artifact>
+</artifacts>
