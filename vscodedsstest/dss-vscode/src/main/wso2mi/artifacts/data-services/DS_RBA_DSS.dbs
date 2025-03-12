@@ -8,7 +8,7 @@
       <property name="password">$SYSTEM:sv_hitpoints_db_pwd</property>
     </config>
     <query id="qGetApiKey" useConfig="DSS">
-      <sql>SELECT api_key FROM hg.apim_api_keys WHERE app_name = :app_name</sql>
+      <sql>SELECT api_key FROM hg.apim_api_keys WHERE app_name = :appName</sql>
       <result outputType="json">{"records": {"record": [{"appName": "$app_name", "apikey": "$api_key"&#13;}]}}</result>
       <param name="app_name" optional="false" sqlType="STRING"/>
    </query>
