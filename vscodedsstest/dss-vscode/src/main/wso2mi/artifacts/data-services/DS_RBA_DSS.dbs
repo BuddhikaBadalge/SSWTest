@@ -17,7 +17,7 @@
          <with-param name="app_name" query-param="appName"/>
       </call-query>
    </resource><query id="select_all_apim_api_keys_query" useConfig="DSS">
-        <sql>SELECT app_name, api_key FROM apim_api_keys</sql>
+        <sql>SELECT app_name, api_key FROM hg.apim_api_keys</sql>
         <result element="apim_api_keysCollection" rowName="apim_api_keys">
             <element column="app_name" name="app_name" xsdType="xs:string"/>
             <element column="api_key" name="api_key" xsdType="xs:integer"/>
